@@ -18,6 +18,9 @@ print(f'Reversed array using a loop: {reversed_arr}')
 
 
 # using function
+''' Here time complexity-        O(n)
+    and  space complexity also-  O(n)
+'''
 def reverse_array(arr):
     reversed_arr = []
     for i in arr:
@@ -44,3 +47,21 @@ reverser = ReverseArray(arr)
 print(f'Reversed array using a class: {reverser.reverse()}')
 
 
+# Best case
+'''
+ Here time complexity-        O(n)
+ and  space complexity also-  O(1)
+'''
+
+def reverse_arr(arr):
+    first = 0
+    last = len(arr)-1
+
+    while first < last:
+        # swap
+        arr[last], arr[first] = arr[first],arr[last]
+        first += 1
+        last -= 1
+    return arr
+arr = [2,4,6,8,10]
+print("Reverse arr: ",reverse_arr(arr))
