@@ -8,6 +8,9 @@ example:
     (6,8) (6,10)
     (8,10)
 like xthis
+
+Time compexity =  \(O(n^2)\)
+Space Complexituy = O(1)
 '''
 
 def print_pairs(arr):
